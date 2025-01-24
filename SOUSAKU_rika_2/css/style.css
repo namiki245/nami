@@ -1,0 +1,411 @@
+/*--
+作成日：12月15日
+作成者：高橋里佳
+タイトル：創作
+--*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #000000;
+    background-color: #E6E2D7;
+    font-size: 1rem;
+    font-family: 'Noto Serif JP';
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+#header {
+    background-image: url(../img/mainvisual-pc_1.png);
+    background-position: top center;
+    background-size: cover;
+    color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 60px 56px;
+    margin-bottom: 190px;
+    writing-mode: vertical-rl;
+}
+
+#header .flex {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.logo {
+    display: block;
+    width: 40px;
+    margin-left: 59px;
+    margin-right: 20.5px;
+}
+
+.menu li {
+    margin-left: 18px;
+}
+
+#header .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    position: absolute;
+    left: 36px;
+    bottom: 30px;
+}
+
+#header .btn a {
+    border: 1px solid #CCCCCC,;
+    writing-mode: vertical-rl;
+    color: #FFFFFF;
+    display: block;
+    padding: 30px 18px;
+}
+
+#header .btn a:hover {
+    opacity: 0.8;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+#news {
+    margin-bottom: 186px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#news .section-title {
+    margin-left: 98px;
+    writing-mode: vertical-rl;
+}
+
+#news .section-title_ja {
+    font-size: 2.25rem;
+}
+
+.section-title_en {
+    font-size: 0.875rem;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.section-title_ja {
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    letter-spacing: 2px;
+}
+
+#news .content {
+    margin-top: 70px;
+    margin-left: 250px;
+    writing-mode: vertical-rl;
+}
+
+#news .content .item {
+    padding: 15px 23px;
+    border-left: 1px solid #000000;
+}
+
+#news .content .item:first-child {
+    border-right: 1px solid #000000;
+}
+
+#news .content .item time {
+    font-size: 0.75rem;
+}
+
+#introduction {
+    margin-bottom: 170px;
+}
+
+#introduction .section-title {
+    writing-mode: vertical-rl;
+    display: flex;
+}
+
+#introduction .section-title_ja {
+    margin-bottom: 18px;
+}
+
+#introduction .goods-1{
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#introduction .goods-1 .section-title {
+    margin-left: 10px;
+}
+
+#introduction .goods-1 .img {
+    padding-left: 297px;
+    width: 100%;
+    margin-top: 94px;
+    position: relative
+}
+
+#introduction .goods-1 .text {
+    background-color: rgba(249, 233, 6, 0.6);
+    width: 356px;
+    height: 34%;
+    position: absolute;
+    bottom: -20px;
+    left: 280px;
+}
+
+#introduction .img img{
+    width: 639px;
+}
+
+#introduction .text p {
+    color: #FFFFFF;
+    padding: 50px 110px;
+    text-align: center;
+}
+
+#introduction .goods-2{
+    display: flex;
+    flex-direction: row;
+}
+
+#introduction .goods-2 .section-title {
+    margin-right: 10px;
+}
+
+#introduction .goods-2 .img {
+    padding-right: 295px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+#introduction .goods-2 .text {
+    background-color: rgba(149,42,38, 0.6);
+    width: 356px;
+    height: 34%;
+    position: absolute;
+    bottom: -10px;
+    right: 280px;
+}    
+
+#place iframe {
+    width: 100%;
+    height: 450px;
+    vertical-align: bottom;
+}
+
+#footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+#footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:  0px 62px 10px 25px;
+}
+
+#footer .container .left {
+    writing-mode: vertical-lr;
+}
+
+#footer .left a {
+    color: #FFFFFF;
+    font-size: 0.875rem;
+}
+
+#footer .right {
+    writing-mode: vertical-lr;
+}
+
+#footer .right .logo {
+    margin-left: 57px;
+}
+
+#footer .right li {
+    margin-left: 18px;
+}
+
+#footer .right .footer-item {
+    margin-left: 60px;
+}
+
+#footer .right .footer-item a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.875rem;
+}
+
+#footer .right .footer-item p {
+    font-size: 0.875rem;
+    margin-left: 2px;
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 0.625rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        padding: 20px 0 10px 0;
+        margin-bottom: 80px;
+        background-image: url(../img/mainvisual-sp_1.png);
+    }
+
+    #header .btn {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 8px;
+        position: absolute;
+        left: 18px;
+        bottom: 19px;
+    }
+
+    .wrapper {
+        padding: 0 16px;
+    } 
+
+    .section-title_en {
+        margin-left: 10px;
+    }
+
+    .section-title_ja {
+        font-size: 1.5rem;
+    }
+
+    #news {
+        margin-bottom: 80px;
+    }
+
+    #news .section-title {
+        margin-left: 19px;
+    }
+
+    #news .section-title_ja {
+        letter-spacing: 5px;
+        font-size: 1.75rem;
+    }
+
+    #news .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #news .content .item:nth-of-type(n + 4) {
+        display: none;
+    }
+
+    #news .content .item {
+        padding: 15px 5px;
+    }
+
+    #introduction {
+        margin-bottom: 97px;
+    }
+
+    #introduction .goods-1 {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    #introduction .goods-1 .section-title_en {
+        display: none;
+    }
+
+    #introduction .goods-1 .section-title {
+        margin-left: 0;
+    }
+
+    #introduction .goods-1 .img {
+        margin-top: 70px;
+        padding-left: 5px;
+    }
+
+    #introduction .goods-1 .img .text {
+        position: absolute;
+        bottom: -12px;
+        left: -10px;
+    }
+
+    #introduction .img .text {
+        padding-left: 0;
+        width: 192px;
+        height: 100px;
+    }
+
+    #introduction .img .text p {
+        padding: 20px 0;
+    }
+
+    #introduction .goods-2 {
+        width: 100%;
+    }
+
+    #introduction .goods-2 .section-title_en {
+        display: none;
+    }
+
+    #introduction .goods-2 .img {
+        margin-top: 63px;
+        padding-right: 0;
+    }
+
+    #introduction .goods-2 .img .text {
+        width: 192px;
+        position: absolute;
+        bottom: -18px;
+        right: -10px;
+    }
+
+    #introduction .text p {
+        padding: 10px 32px;
+    }
+
+    #footer {
+        padding-top: 40px;
+    }
+
+    #footer .container{
+        padding: 0px 0px 0px 14px;
+    }
+
+    #footer .right .footer-item {
+        margin-left: 20px;
+    }
+
+    #footer .right .footer-item p {
+        margin-left: 7px;
+    }
+
+    #footer .right .logo {
+        margin-left: 22px;
+    }
+
+    #footer .right li {
+        margin-left: 4px;
+        font-size: 0.875rem;
+    }
+
+}
